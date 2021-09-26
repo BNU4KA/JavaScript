@@ -1,6 +1,12 @@
 "use strict"
-let i = 1000;
-for (; i>0; i-7)
+let money = prompt("ваш бюджет на месяц: ")
+let time = prompt("введите дату в формате YYYY-MM-DD")
+let appData = 
 {
-    console.log(i);
-};
+    budget = money,
+    timeData = time,
+    expenses,
+    optionalExpenses,
+    income = [],
+    savins = false,
+}
