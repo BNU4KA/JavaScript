@@ -1,5 +1,14 @@
-.h1 {
+.text_transform 
+{
     display: flex;
     font-size: large;
-    padding-left: 100px;
+    position: relative;
+    color: blue;
+    transition: 1s linear;
+}
+
+.text_transform:hover {
+    color: red;
+    position: relative;
+    transition: 1s linear;
 }
