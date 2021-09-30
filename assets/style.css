@@ -8,6 +8,7 @@
 }
 
 .text_transform:hover {
+    padding-left: 100px;
     color: red;
     position: relative;
     transition: 1s linear;
