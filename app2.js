@@ -16,10 +16,12 @@ let trets, cost
 
 for (let i = 0; i < 1; i++)
 {
-    trets = prompt("введите обязатеьную статью расходов в этом месяце", "пиво, водка, сигареты");
-    cost = prompt("введите во сколько это обойдется", 100)
+    trets = prompt("введите обязатеьную статью расходов в этом месяце", );
+    cost = prompt("введите во сколько это обойдется", )
+    
+    console.log(typeof(cost))
+    appData.expenses.trets = cost
 };
 
-appData.expenses.trets = cost
 let exitData = ((appData.budget)/30).toFixed(1)
 alert("ваш бюджет на один день " +  (exitData))
