@@ -2,7 +2,7 @@
 {
     display: flex;
     font-size: large;
-    position: relative;
+    position: absolute;
     color: blue;
     transition: 1s linear;
 }
