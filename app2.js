@@ -1,6 +1,23 @@
 "use strict"
-let money = prompt("ваш бюджет на месяц: ", 1000)
-let time = prompt("введите дату в формате YYYY-MM-DD", "2010-02-12")
+
+let money, time;
+
+function start()
+{
+    money = +prompt("ваш бюджет на месяц: ", 1000);
+    time = prompt("введите дату в формате YYYY-MM-DD", "2010-02-12");
+
+    while(isNaN(money) || money == "" || money == null)
+    {
+        alert("вы ввели хрень")
+        money = +prompt("Ваш бюджет на месяц: ", 1000);
+    }
+    return money,time;
+}
+
+start();
+
+console.log(money, time)
 
 let appData = 
 {
@@ -16,7 +33,7 @@ let trets, cost
 for (let i = 0; i < 1; i++)
 {
     trets = +prompt("введите обязатеьную статью расходов в этом месяце", 1);
-    cost = prompt("введите во сколько это обойдется", 1)
+    cost = +prompt("введите во сколько это обойдется", 1)
    
     if ((typeof(trets)) === 'string' && (typeof(cost)) != null && (typeof(trets)) != null 
     && cost != '' && trets != '' && cost.length < 3) 
@@ -27,7 +44,7 @@ for (let i = 0; i < 1; i++)
     else
     {
         trets = +prompt("введите обязатеьную статью расходов в этом месяце", 1);
-        cost = prompt("введите во сколько это обойдется", 1)
+        cost = +prompt("введите во сколько это обойдется", 1)
     }
 };
 
