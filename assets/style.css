@@ -1,15 +1,34 @@
-.text_transform 
+.shine-button 
 {
-    display: flex;
-    font-size: large;
-    position: absolute;
-    color: blue;
-    transition: 1s linear;
+text-decoration: none;
+display: inline-block;
+padding: 10px 30px;
+margin: 10px 20px;
+position: relative;
+overflow: hidden;
+border: 2px solid #fe6637;
+border-radius: 8px;
+font-family: 'Montserrat', sans-serif;
+color: #fe6637;
+transition: .2s ease-in-out;
 }
-
-.text_transform:hover {
-    padding-left: 100px;
-    color: red;
-    position: relative;
-    transition: 1s linear;
+.shine-button:before 
+{
+content: "";
+background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+height: 100px;
+width: 100px;
+position: absolute;
+top: -8px;
+left: -100px;
+transform: skewX(-45deg);
+}
+.shine-button:hover {
+background: #fe6637;
+color: #fff;
+}
+.shine-button:hover:before 
+{
+left: 300px;
+transition: .5s ease-in-out;
 }
