@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 let money, time
 
@@ -15,7 +15,7 @@ function start(value)
     console.log(money,time)
     return money,time;
 }
-start();
+//start();
 
 let appData = 
 {
@@ -47,10 +47,10 @@ function chooseExpensece()
     }
 }
 
-chooseExpensece();
+//chooseExpensece();
 
 appData.moneyPerDay = ((appData.budget)/30).toFixed(1)
-alert("ваш бюджет на один день " +  (appData.moneyPerDay))
+//alert("ваш бюджет на один день " +  (appData.moneyPerDay))
 
 if (appData.moneyPerDay > 100)
 {

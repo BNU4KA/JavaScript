@@ -32,3 +32,11 @@ color: #fff;
 left: 300px;
 transition: .5s ease-in-out;
 }
+
+.video
+{
+    color: black;
+    position: relative;
+    justify-content: center;
+    padding-top: 100px;
+}
